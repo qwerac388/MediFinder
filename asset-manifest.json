@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MediFinder/static/css/main.756ee712.css",
-    "main.js": "/MediFinder/static/js/main.abb60134.js",
+    "main.js": "/MediFinder/static/js/main.6991df0e.js",
     "static/js/787.392de1b0.chunk.js": "/MediFinder/static/js/787.392de1b0.chunk.js",
     "static/media/slick.svg": "/MediFinder/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/MediFinder/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -9,11 +9,11 @@
     "static/media/slick.woff": "/MediFinder/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MediFinder/index.html",
     "main.756ee712.css.map": "/MediFinder/static/css/main.756ee712.css.map",
-    "main.abb60134.js.map": "/MediFinder/static/js/main.abb60134.js.map",
+    "main.6991df0e.js.map": "/MediFinder/static/js/main.6991df0e.js.map",
     "787.392de1b0.chunk.js.map": "/MediFinder/static/js/787.392de1b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.756ee712.css",
-    "static/js/main.abb60134.js"
+    "static/js/main.6991df0e.js"
   ]
 }
