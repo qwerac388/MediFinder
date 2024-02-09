@@ -1,0 +1,459 @@
+/**/
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% {
+    -webkit-transform: perspective(120px);
+  }
+  50% {
+    -webkit-transform: perspective(120px) rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+  }
+}
+/**/
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/**/
+.allsearchInputWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  animation: 1s slideInBottom ease-in-out forwards 0s;
+}
+
+.searchInputWrapper {
+  background-color: #ffffff;
+  width: 90%;
+  min-height: 10%;
+  padding: 0.8em;
+  border-radius: 4em;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+  animation: 1.2s slideInBottom ease-in-out forwards 0s;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.searchInputWrapper:hover {
+  border: 2px solid #2683fd;
+  box-shadow: 0 0 3px rgb(108, 172, 255);
+  transform: scale(1);
+}
+
+input {
+  border: none;
+  outline: none;
+  width: 20em;
+}
+
+/**/
+/* .servicePage-container {
+  margin-top: 0.4em;
+} */
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+.service-button {
+  background-color: #fafafa;
+  border-radius: 50em;
+  border: 2px solid #2683fd;
+  outline: none;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.4em;
+  color: #2683fd;
+  margin: 5px;
+  font-size: 16px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
+}
+
+button:hover {
+  background-color: #2683fd;
+  color: #ffffff;
+}
+
+/* .allComponents {
+  margin-top: -40px;
+} */
+
+.upperCardContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.upperCardLeftContainer {
+  margin-right: 40px;
+}
+
+.upperCardRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+.locationText,
+.mapHeading {
+  font-size: 16px;
+  text-align: center;
+}
+
+ol {
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+
+.bold-service {
+  all: unset;
+  font-weight: bold;
+}
+.selected {
+  background-color: #2683fd;
+  color: #ffffff;
+}
+
+.selectedService {
+  font-weight: bold;
+  /* color: #2683fd; */
+  font-size: 22px;
+  font-weight: bold;
+}
+/**/
+
+/*textSetting*/
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  /* margin-bottom: -5px; */
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.6em;
+  margin-top: 0.4em;
+  margin-left: 0.2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-left: 0.2em;
+}
+
+h4 {
+  font-size: 1.1em;
+  margin-left: 0.2em;
+}
+
+a {
+  color: #7f7f7f;
+  font-style: normal;
+}
+
+a:hover {
+  color: #2e4faf;
+  text-decoration: none;
+}
+
+span {
+  padding: 0.2em;
+  transform: scale(0.9);
+}
+
+p {
+}
+
+/*ServicePage*/
+
+.kowloon,
+.hkisland,
+.newterr {
+  color: white;
+  font-weight: 600;
+  border-radius: 1em;
+  width: 4em;
+  height: 2em;
+  border: 2px solid #d60000;
+
+  text-align: center;
+  margin-left: 0.3em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+}
+.hkisland {
+  border: 2px solid #306fb9;
+  color: #306fb9;
+}
+
+.kowloon {
+  border: 2px solid #d60000;
+  color: #d60000;
+}
+
+.newterr {
+  border: 2px solid #039e37;
+  color: #039e37;
+}
+
+.newServices-title {
+  margin-top: 2em;
+  margin-bottom: 1.6em;
+  font-size: 18px;
+}
+
+/*buttonForServicePage*/
+.serviceText-container p {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.border {
+  cursor: pointer;
+  background-color: #fbf8f8;
+  border-radius: 1em;
+  padding: 1em;
+  transform: scale(0.96);
+  margin-bottom: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.08);
+}
+
+.border:hover {
+  border: 2px solid #2683fd;
+  box-shadow: 0 0 3px rgb(108, 172, 255);
+  transform: scale(1);
+}
+
+.hospital-image {
+  all: unset;
+  width: 250px;
+  height: 100px;
+}
+
+img {
+  border-radius: 60%;
+  margin-right: 5px;
+}
+
+.breakLine {
+  margin: 20px;
+  border: 1px solid rgb(227, 223, 223);
+}
+
+.allComponents {
+  display: flex;
+  flex-direction: row;
+  margin-top: -10px;
+}
+
+.left-container {
+  width: 50vw;
+  height: 80vh;
+  /* below to fix the overflow slider */
+  max-height: 80vh;
+  overflow: auto;
+  /* 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+
+  color: #7f7f7f;
+  font-style: normal;
+}
+
+.right-container {
+  width: 50vw;
+}
+
+.mapWrapper {
+  margin-right: 1em;
+  color: #7f7f7f;
+  font-style: normal;
+}
+
+.mapWrapper a {
+  margin-right: 1em;
+  color: #7f7f7f;
+  font-style: normal;
+}
+
+.iframe {
+  width: 100%;
+  height: 70vh;
+  border-radius: 0.4em;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.mapContainer {
+  position: relative;
+}
+
+.redirectContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20px;
+  right: 5px;
+}
+
+/* Map Button */
+.mapButton {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100px;
+  background-color: white;
+  margin-bottom: 5px;
+  color: #2683fd;
+  padding: 5px;
+  font-weight: 500;
+}
+
+.blue {
+  color: #2683fd;
+}
+
+.orange {
+  color: orange;
+}
+.red {
+  color: #d60000;
+}
+
+.footer-wrapper {
+  text-align: right;
+  font-weight: normal;
+  color: #7f7f7f;
+  margin: 2em;
+  /* margin-top: -10px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.haGO {
+  display: none;
+}
+
+.iconContainer {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+}
+
+.iconWrap {
+  display: none;
+}
+
+/* .specialistServices-container {
+  margin: 2em;
+} */
+
+/* mobile and ipad */
+@media screen and (max-width: 820px) {
+  .allComponents {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-container {
+    width: 100vw;
+  }
+  .right-container {
+    /* width: 100vw; */
+    display: none;
+  }
+  .upperCardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .upperCardRightContainer {
+    all: unset;
+    margin-top: 10px;
+  }
+
+  /* to put the close icon on top left */
+  .iconWrap {
+    display: flex;
+  }
+  .haGO {
+    display: block;
+    width: 200px;
+    height: 75px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    margin-top: 4em;
+  }
+}
