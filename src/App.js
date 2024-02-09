@@ -29,7 +29,7 @@ function App() {
           {/* Links to navigate between pages */}
 
           <Link to="/about-us"> 主要頁</Link>
-          <Link to="/a&e"> 急症室</Link>
+          <Link to="/MediFinder"> 急症室</Link>
           <Link to="/service">專科服務</Link>
           <Link to="/general">普通科</Link>
           <Link to="/ambulance">緊急熱線</Link>
@@ -51,7 +51,7 @@ function App() {
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="*" element={<PageNotFound />} />
         <Route
-          path="/a&e"
+          path="/MediFinder"
           element={
             <WaitTime
               userLocation={userLocation}

@@ -18,11 +18,10 @@ import LoadingOpening from "../Loading";
 
 function ServicePage({
   userLocation,
-  CORS,
   showIconContainer,
   setShowIconContainer,
 }) {
-  const BookingWaitTimeAPI = `${CORS}https://www.ha.org.hk/opendata/sop/sop-waiting-time-tc.json`;
+  const BookingWaitTimeAPI = `https://www.ha.org.hk/opendata/sop/sop-waiting-time-tc.json`;
 
   //for BookingAPI use
   const [isFetching3, setIsFetching3] = useState(false);

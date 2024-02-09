@@ -21,18 +21,17 @@ import LoadingOpening from "./Loading";
 function WaitTime({
   userLocation,
   setUserLocation,
-  CORS,
   showIconContainer,
   setShowIconContainer,
 }) {
   //A&E waiting time
-  const API1 = `${CORS}https://www.ha.org.hk/opendata/aed/aedwtdata-tc.json`;
+  const API1 = `https://www.ha.org.hk/opendata/aed/aedwtdata-tc.json`;
 
   //Hospital address,website,contact
-  const API2 = `${CORS}https://api.csdi.gov.hk/apim/dataquery/api/?id=fhb_rcd_1637028364270_14638&layer=geotagging&limit=200&offset=0`;
+  const API2 = `https://api.csdi.gov.hk/apim/dataquery/api/?id=fhb_rcd_1637028364270_14638&layer=geotagging&limit=200&offset=0`;
 
   //Distance and Hospital Name API
-  const hospitalUrl = `${CORS}https://www.ha.org.hk/opendata/facility-hosp.json`;
+  const hospitalUrl = `https://www.ha.org.hk/opendata/facility-hosp.json`;
 
   //For Distance API use
   const [hospitals, setHospitals] = useState([]);
@@ -275,9 +274,9 @@ function WaitTime({
     return deg * (Math.PI / 180);
   };
 
-  console.log(hospitals);
-  console.log(distances);
-  console.log(characters);
+  // console.log(hospitals);
+  // console.log(distances);
+  // console.log(characters);
 
   return (
     <div className={styles["main-container"]}>
