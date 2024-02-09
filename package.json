@@ -1,7 +1,7 @@
 {
   "name": "MediFinder",
   "version": "0.1.0",
-  "homepage": "https://GenerationFEWD9.github.io/a&e",
+  "homepage": "https://qwerac388.github.io/MediFinder",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -56,6 +56,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0"
+    "gh-pages": "^6.1.1"
   }
 }

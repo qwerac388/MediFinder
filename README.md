@@ -33,7 +33,7 @@ MediFinder is a React-based web application designed to help users in finding 24
 
 ## Usage
 
-Visit MediFinder at [GitHub Pages URL](#) to start finding healthcare services near you. Navigate through the different sections using the menu. The search bar can be utilized to quickly locate specific hospitals. Interactive maps provide a visual guide to hospital locations and information.
+Visit MediFinder at [https://qwerac388.github.io/MediFinder/](#) to start finding healthcare services near you. Navigate through the different sections using the menu. The search bar can be utilized to quickly locate specific hospitals. Interactive maps provide a visual guide to hospital locations and information.
 
 ## Built With
 
