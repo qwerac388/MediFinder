@@ -770,6 +770,10 @@ p {
     z-index: 1;
     right: 0;
   }
+
+  .twoHourButton {
+    margin-top: -30px;
+  }
 }
 
 .shareFooterWrapper {

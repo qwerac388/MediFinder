@@ -22,6 +22,9 @@ function App() {
 
   // const CORS = "https://cors-anywhere.herokuapp.com/";
 
+  //Heroku
+  const CORS = "https://medifinder-cors-proxy-b5d17a79cd70.herokuapp.com/";
+
   return (
     <Router>
       <div className={styles["navBar-homepage"]}>
@@ -45,6 +48,7 @@ function App() {
               userLocation={userLocation}
               showIconContainer={showIconContainer}
               setShowIconContainer={setShowIconContainer}
+              CORS={CORS}
             />
           }
         />
@@ -58,6 +62,7 @@ function App() {
               setUserLocation={setUserLocation}
               showIconContainer={showIconContainer}
               setShowIconContainer={setShowIconContainer}
+              CORS={CORS}
             />
           }
         />
@@ -68,6 +73,7 @@ function App() {
               userLocation={userLocation}
               showIconContainer={showIconContainer}
               setShowIconContainer={setShowIconContainer}
+              CORS={CORS}
             />
           }
         />

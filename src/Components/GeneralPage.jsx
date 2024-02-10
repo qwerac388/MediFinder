@@ -18,10 +18,11 @@ function GeneralPage({
   userLocation,
   showIconContainer,
   setShowIconContainer,
+  CORS,
 }) {
-  const generalAPI = `https://www.ha.org.hk/opendata/facility-gop.json`;
+  const generalAPI = `${CORS}https://www.ha.org.hk/opendata/facility-gop.json`;
 
-  const quotaAPI = `https://www.ha.org.hk/pas_gopc/pas_gopc_avg_quota_pdf/g0_9uo7a_p-tc.json`;
+  const quotaAPI = `${CORS}https://www.ha.org.hk/pas_gopc/pas_gopc_avg_quota_pdf/g0_9uo7a_p-tc.json`;
 
   //for searchBar use
   const [searchTerm, setSearchTerm] = useState("");

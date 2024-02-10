@@ -20,8 +20,9 @@ function ServicePage({
   userLocation,
   showIconContainer,
   setShowIconContainer,
+  CORS,
 }) {
-  const BookingWaitTimeAPI = `https://www.ha.org.hk/opendata/sop/sop-waiting-time-tc.json`;
+  const BookingWaitTimeAPI = `${CORS}https://www.ha.org.hk/opendata/sop/sop-waiting-time-tc.json`;
 
   //for BookingAPI use
   const [isFetching3, setIsFetching3] = useState(false);

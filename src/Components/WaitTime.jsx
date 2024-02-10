@@ -23,15 +23,16 @@ function WaitTime({
   setUserLocation,
   showIconContainer,
   setShowIconContainer,
+  CORS,
 }) {
   //A&E waiting time
-  const API1 = `https://www.ha.org.hk/opendata/aed/aedwtdata-tc.json`;
+  const API1 = `${CORS}https://www.ha.org.hk/opendata/aed/aedwtdata-tc.json`;
 
   //Hospital address,website,contact
-  const API2 = `https://api.csdi.gov.hk/apim/dataquery/api/?id=fhb_rcd_1637028364270_14638&layer=geotagging&limit=200&offset=0`;
+  const API2 = `${CORS}https://api.csdi.gov.hk/apim/dataquery/api/?id=fhb_rcd_1637028364270_14638&layer=geotagging&limit=200&offset=0`;
 
   //Distance and Hospital Name API
-  const hospitalUrl = `https://www.ha.org.hk/opendata/facility-hosp.json`;
+  const hospitalUrl = `${CORS}https://www.ha.org.hk/opendata/facility-hosp.json`;
 
   //For Distance API use
   const [hospitals, setHospitals] = useState([]);
