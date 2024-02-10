@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/MediFinder/static/css/main.3ac86476.css",
-    "main.js": "/MediFinder/static/js/main.8cabbb9e.js",
+    "main.css": "/MediFinder/static/css/main.48e7c2dd.css",
+    "main.js": "/MediFinder/static/js/main.af9c751a.js",
     "static/js/787.392de1b0.chunk.js": "/MediFinder/static/js/787.392de1b0.chunk.js",
     "static/media/slick.svg": "/MediFinder/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/MediFinder/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/MediFinder/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/MediFinder/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MediFinder/index.html",
-    "main.3ac86476.css.map": "/MediFinder/static/css/main.3ac86476.css.map",
-    "main.8cabbb9e.js.map": "/MediFinder/static/js/main.8cabbb9e.js.map",
+    "main.48e7c2dd.css.map": "/MediFinder/static/css/main.48e7c2dd.css.map",
+    "main.af9c751a.js.map": "/MediFinder/static/js/main.af9c751a.js.map",
     "787.392de1b0.chunk.js.map": "/MediFinder/static/js/787.392de1b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3ac86476.css",
-    "static/js/main.8cabbb9e.js"
+    "static/css/main.48e7c2dd.css",
+    "static/js/main.af9c751a.js"
   ]
 }
