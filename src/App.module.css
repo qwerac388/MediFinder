@@ -774,6 +774,10 @@ p {
   .twoHourButton {
     margin-top: -30px;
   }
+  .locationText {
+    align-self: center;
+    width: 800px;
+  }
 }
 
 .shareFooterWrapper {

@@ -283,33 +283,6 @@ function WaitTime({
     <div className={styles["main-container"]}>
       <LoadingOpening />
       <h1>急症室等候時間</h1>
-      {showIconContainer && (
-        <div className={styles["taxi-icon-container"]}>
-          <div className={styles["taxi-icon-wrap"]}>
-            <CloseIcon
-              onClick={handleCloseIconClick}
-              role="button"
-              tabIndex={0}
-            />
-            <a
-              href="https://www.hktaxiapp.com/r/download"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="https://play-lh.googleusercontent.com/hcDITPghryGJ7i47u2U3naH29izIxUiNQb-QX0zimJJKQzAjuO7YIVHoyn7EbhAHU8yt=w480-h960-rw"
-                alt="HKTaxi App"
-                style={{
-                  width: "5.5em",
-                  backgroundColor: "#ffffff",
-                  borderRadius: "1em",
-                  boxShadow: "0 10px 15px rgba(0, 0, 0, 0.08)",
-                }}
-              />
-            </a>
-          </div>
-        </div>
-      )}
       <p className={styles["errorMsg"]}>{errorMsg}</p>
       <div id="hospitalDisplayWrapper">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -343,6 +316,33 @@ function WaitTime({
                   </button>
                 </div>
               </div>
+              {showIconContainer && (
+                <div className={styles["taxi-icon-container"]}>
+                  <div className={styles["taxi-icon-wrap"]}>
+                    <CloseIcon
+                      onClick={handleCloseIconClick}
+                      role="button"
+                      tabIndex={0}
+                    />
+                    <a
+                      href="https://www.hktaxiapp.com/r/download"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://play-lh.googleusercontent.com/hcDITPghryGJ7i47u2U3naH29izIxUiNQb-QX0zimJJKQzAjuO7YIVHoyn7EbhAHU8yt=w480-h960-rw"
+                        alt="HKTaxi App"
+                        style={{
+                          width: "5.5em",
+                          backgroundColor: "#ffffff",
+                          borderRadius: "1em",
+                          boxShadow: "0 10px 15px rgba(0, 0, 0, 0.08)",
+                        }}
+                      />
+                    </a>
+                  </div>
+                </div>
+              )}
               <Slider ref={sliderRef} {...settings}>
                 {getFilteredDistances().map((item, index) => (
                   <div

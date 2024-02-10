@@ -212,6 +212,27 @@ function GeneralPage({
         location={selectedHospitalLocation2}
       />
       <div className={styles["serviceText-container"]}>
+        <div className={styles["locationtextAndSelectContainer"]}>
+          <p className={styles["locationText"]}>
+            <LocationOnIcon sx={{ fontSize: 16, padding: 0.1 }} />
+            以下是距離您當前位置最近的普通科門診：
+          </p>
+          <div className={styles["selectContainer"]}>
+            {
+              <select
+                className={styles["select"]}
+                onChange={handleSelectChange}
+              >
+                <option>篩選</option>
+                {hongKongDistricts.map((district, index) => (
+                  <option value={district} key={index}>
+                    {district}
+                  </option>
+                ))}
+              </select>
+            }
+          </div>
+        </div>
         {/* to remove the floating icon once user clicked x */}
         {showIconContainer && (
           <div className={styles["iconContainer"]}>
@@ -241,27 +262,6 @@ function GeneralPage({
             </div>
           </div>
         )}
-        <div className={styles["locationtextAndSelectContainer"]}>
-          <p className={styles["locationText"]}>
-            <LocationOnIcon sx={{ fontSize: 16, padding: 0.1 }} />
-            以下是距離您當前位置最近的普通科門診：
-          </p>
-          <div className={styles["selectContainer"]}>
-            {
-              <select
-                className={styles["select"]}
-                onChange={handleSelectChange}
-              >
-                <option>篩選</option>
-                {hongKongDistricts.map((district, index) => (
-                  <option value={district} key={index}>
-                    {district}
-                  </option>
-                ))}
-              </select>
-            }
-          </div>
-        </div>
         <section className={styles["specialistServices-container"]}>
           {/* {to fix dynamically changing data and added a condition to display first slider on mobile} */}
           {sortedGeneralHospitals.length > 0 ? (

@@ -196,6 +196,7 @@ function ServicePage({
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
           />
+          <ServicePageButton setSelectedService={setSelectedService} />
           {/* to remove the floating icon once user clicked x */}
           {showIconContainer && (
             <div className={styles["iconContainer"]}>
@@ -225,8 +226,6 @@ function ServicePage({
               </div>
             </div>
           )}
-          <ServicePageButton setSelectedService={setSelectedService} />
-
           <div className={styles["specialistServices-container"]}>
             <div className={styles["serviceText-container"]}>
               <p className={styles["locationText"]}>
