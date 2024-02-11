@@ -252,6 +252,8 @@ img {
 
 .errorMsg {
   color: red;
+  text-align: center;
+  font-size: 20px;
 }
 
 .main-container {

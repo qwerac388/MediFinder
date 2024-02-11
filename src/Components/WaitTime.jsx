@@ -223,7 +223,6 @@ function WaitTime({
         },
         (error) => {
           setErrorMsg("⚠️ 請允許系統存取您的當前位置 及 重新更新頁面 ⚠️");
-          // fetchUserLocation();
         }
       );
     } else {
