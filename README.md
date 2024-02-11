@@ -3,8 +3,8 @@
 ## Preview
 
 ![Preview of the Currency Converter Chrome Extension](/Image1a1.png)
-![Preview of the Currency Converter Chrome Extension](/Image2a.png)
-![Preview of the Currency Converter Chrome Extension](/Image3a.png)
+![Preview of the Currency Converter Chrome Extension](/Image2a2.png)
+![Preview of the Currency Converter Chrome Extension](/Image3a2.png)
 
 ## Overview
 
