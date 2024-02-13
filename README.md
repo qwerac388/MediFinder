@@ -14,7 +14,7 @@ MediFinder is a React-based web application designed to help users in finding 24
 
 - **Urgent Hotlines**: Quick access to emergency contact numbers with the functionality to call directly from the app.
 
-  ![24-Hour Emergency Room Locator Page Preview](/Image1a1.png)
+  ![24-Hour Emergency Room Locator Page Preview](/PreviewPictures/WaitTimePagePreview.png)
 
 ---
 
@@ -22,7 +22,7 @@ MediFinder is a React-based web application designed to help users in finding 24
 
 - **HA Go App Integration For Mobile Version**: Guided mobile experience with prompts to download the HA Go app, allowing users to make reservations for specialist and general medical services right from their smartphone.
 
-  ![Specialist Services Information Page Preview](/Image2a2.png)
+  ![Specialist Services Information Page Preview](/PreviewPictures/SpecialistServicePagePreview.png)
 
 ---
 
@@ -32,18 +32,19 @@ MediFinder is a React-based web application designed to help users in finding 24
 
 - **Interactive Maps**: Visualize the location of hospitals on an easy-to-navigate map. Provided with alternative buttons to open the location in Google Maps and Apple Maps.
 
-  ![General Medical Services Page Preview](/Image3a2.png)
+  ![General Medical Services Page Preview](/PreviewPictures/GeneralServicePagePreview.png)
 
 ## Error Handling
 
 - **Page Not Found**: In case a user navigates to an unknown route, our `PageNotFound` component provides a user-friendly message, guiding them back to the functional parts of the application.
-  ![PageNotFound Preview](/PageNotFound1.png)
+  ![PageNotFound Preview](/PreviewPictures/PageNotFound1.png)
 - **Location Permissions**: If a user declines to share their geolocation, the application will display a custom error message prompting them to allow location access to utilize geolocation services fully.
-  ![ErrorMsg Preview](/ErrorMsg1.png)
+  ![ErrorMsg Preview](/PreviewPictures/ErrorMsg1.png)
 
 ## Usage
 
-Visit MediFinder at [https://qwerac388.github.io/MediFinder/](#) to start finding healthcare services near you. Navigate through the different sections using the menu. The search bar can be utilized to quickly locate specific hospitals. Interactive maps provide a visual guide to hospital locations and information.
+Visit MediFinder at [https://qwerac388.github.io/MediFinder/](https://qwerac388.github.io/MediFinder/) to start finding healthcare services near you. Navigate through the different sections using the menu. The search bar can be utilized to quickly locate specific hospitals. Interactive maps provide a visual guide to hospital locations and information.
+![OG Preview](/PreviewPictures/OGPreview.jpg)
 
 ## Built With
 
